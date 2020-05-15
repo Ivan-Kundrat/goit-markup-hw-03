@@ -353,8 +353,8 @@ footer {
 .filter-list {
   display: flex;
 
-  margin-left: 285px;
-  margin-right: 285px;
+  margin-left: 280px;
+  margin-right: 280px;
 }
 .filter-list .item {
   margin-right: 8px;
