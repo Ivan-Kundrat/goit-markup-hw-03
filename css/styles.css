@@ -335,6 +335,8 @@ footer {
 }
 .footer .address {
   font-style: normal;
+  width: 231px;
+  margin-bottom: 28px;
 }
 .footer .social-links {
   display: flex;
@@ -363,13 +365,18 @@ footer {
   line-height: 1.14;
   text-transform: uppercase;
 }
+.footer .border {
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(255, 255, 255, 0.1);
+}
 .footer-developer {
   color: rgba(255, 255, 255, 0.4);
 
   font-size: 12px;
   line-height: 2;
   text-align: center;
-  margin-top: 45px;
+  padding-top: 18px;
 }
 .filter {
   margin-top: 94px;
@@ -377,7 +384,7 @@ footer {
 }
 .filter-list {
   display: flex;
-  width: 620px;
+  width: 611px;
   margin-left: auto;
   margin-right: auto;
   padding-bottom: 50px;
@@ -397,6 +404,7 @@ footer {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+  border: 0;
 
   padding: 6px 22px;
 }
