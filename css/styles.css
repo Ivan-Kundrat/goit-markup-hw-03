@@ -14,6 +14,7 @@
 }
 html {
   box-sizing: border-box;
+  line-height: 0;
 }
 *,
 *::before,
@@ -128,7 +129,9 @@ p {
 .main {
   text-align: center;
   padding-top: 200px;
-  padding-bottom: 200px;
+
+  height: 600px;
+  margin-bottom: 94px;
 }
 .main-title {
   background-color: rgba(47, 48, 58, 0.8);
@@ -140,6 +143,7 @@ p {
 
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  height: 104px;
 
   margin-bottom: 46px;
 }
@@ -153,14 +157,13 @@ p {
   line-height: 1.88;
 
   letter-spacing: 0.06em;
-
+  min-height: 50px;
   min-width: 200px;
   padding: 10px 32px;
   border-radius: 4px;
 }
 
 .recipe-success {
-  margin-top: 94px;
   margin-bottom: 94px;
 }
 .recipe-success .list {
@@ -187,19 +190,25 @@ p {
   font-size: 14px;
   line-height: 1.71;
 }
-
-.recipe-success .picture {
+.recipe-success .background {
   background-color: #f5f4fa;
-
+  width: 278px;
+  height: 120px;
+  padding: 25px 104px;
+  border-radius: 4px;
   margin-bottom: 30px;
 }
-.recipe-success .picture:hover {
+
+.recipe-success .background:hover {
   background-color: var(--accent-color);
 }
-
-.activity-list {
-  margin-top: 50px;
+.activity {
   margin-bottom: 94px;
+}
+.activity .title {
+  margin-bottom: 50px;
+}
+.activity-list {
   display: flex;
 }
 .activity .item {
@@ -228,10 +237,12 @@ p {
   margin-top: 50px;
   display: flex;
 }
+
 .command-player .item {
-  width: 278px;
+  height: 422px;
   margin-right: 30px;
   text-align: center;
+  background-color: #ffffff;
 }
 .command-player .item:last-child {
   margin-right: 0px;
@@ -254,8 +265,20 @@ p {
 }
 .social-links {
   display: flex;
-  margin-right: 35px;
-  margin-left: 35px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 207px;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+.social-links .item {
+  height: 44px;
+}
+.command-player .icon {
+  background-color: var(--primery-bcg-color);
+}
+.command-player .icon:hover {
+  background-color: var(--accent-color);
 }
 
 .clients .icon:hover {
@@ -298,6 +321,8 @@ footer {
   display: flex;
 }
 .footer .logo {
+  font-size: 22px;
+  line-height: 1.18;
   margin-right: 281px;
   margin-bottom: 10px;
 }
@@ -346,15 +371,16 @@ footer {
   text-align: center;
   margin-top: 45px;
 }
-.filter-margin {
+.filter {
   margin-top: 94px;
   margin-bottom: 94px;
 }
 .filter-list {
   display: flex;
-
-  margin-left: 280px;
-  margin-right: 280px;
+  width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 50px;
 }
 .filter-list .item {
   margin-right: 8px;
@@ -365,14 +391,14 @@ footer {
 .filter .button {
   background-color: #f5f4fa;
   height: 38px;
+
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.63;
+  line-height: 1.62;
   text-align: center;
 
   padding: 6px 22px;
-  margin-bottom: 50px;
 }
 .filter .button:hover,
 .filter .button:focus {
