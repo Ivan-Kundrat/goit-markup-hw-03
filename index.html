@@ -66,18 +66,21 @@
 
     <main>
       <!--Головний заголовок-->
+
       <section class="main">
-        <h1 class="main-title">
-          эффективные решения <br />
-          для вашего бизнеса
-        </h1>
-        <button class="main-button">Заказать услугу</button>
+        <div class="main-content">
+          <h1 class="main-title">
+            эффективные решения <br />
+            для вашего бизнеса
+          </h1>
+          <button class="main-button">Заказать услугу</button>
+        </div>
       </section>
 
       <!--Рішення для бізнесу-->
       <section class="recipe-success">
         <div class="container">
-          <h2>Залог успеха</h2>
+          <h2 class="visually-hidden">Залог успеха</h2>
           <ul class="list">
             <li class="item">
               <div class="background">
@@ -150,30 +153,37 @@
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="activity-list">
             <li class="item">
-              <img
-                src="./images/img.svg"
-                alt="открытый ноутбук"
-                width="380"
-                height="294"
-              />
+              <div class="img">
+                <img
+                  src="./images/img.svg"
+                  alt="открытый ноутбук"
+                  width="370"
+                  height="294"
+                />
+              </div>
+
               <p class="activity-text">Десктопные приложения</p>
             </li>
             <li class="item">
-              <img
-                src="./images/box.svg"
-                alt="смартфон"
-                width="380"
-                height="294"
-              />
+              <div class="img">
+                <img
+                  src="./images/box.svg"
+                  alt="смартфон"
+                  width="370"
+                  height="294"
+                />
+              </div>
               <p class="activity-text">Мобильные приложения</p>
             </li>
             <li class="item">
-              <img
-                src="./images/img(1).svg"
-                alt="монитор"
-                width="380"
-                height="294"
-              />
+              <div class="img">
+                <img
+                  src="./images/img(1).svg"
+                  alt="монитор"
+                  width="370"
+                  height="294"
+                />
+              </div>
               <p class="activity-text">Дизайнерские решения</p>
             </li>
           </ul>
@@ -189,7 +199,7 @@
               <img
                 src="./images/img(2).svg"
                 alt="photo of John"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="name">John Smith</h3>
@@ -241,7 +251,7 @@
               <img
                 src="./images/img(3).svg"
                 alt="photo of Marta"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="name">Marta Stewart</h3>
@@ -293,7 +303,7 @@
               <img
                 src="./images/img(4).svg"
                 alt="photo of Robert"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="name">Robert Jakis</h3>
@@ -345,7 +355,7 @@
               <img
                 src="./images/img(5).svg"
                 alt="photo of Martin"
-                width="278"
+                width="270"
                 height="260"
               />
               <h3 class="name">Martin Doe</h3>
@@ -466,52 +476,51 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="border">
-          <div class="footer-up">
-            <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
-            <h2 class="footer-call">присоединяйтесь</h2>
-          </div>
-          <div class="footer-middle">
-            <address class="address">
-              г. Киев, пр-т Леси Украинки, 26
-              <ul>
-                <li>
-                  <a href="mailto:info@example.com" class="footer-link"
-                    >info@example.com</a
-                  >
-                </li>
-                <li>
-                  <a href="tell:+380991111111" class="footer-link"
-                    >+38 099 111 11 11</a
-                  >
-                </li>
-              </ul>
-            </address>
-
-            <ul class="social-links">
-              <li class="item">
-                <a href="" aria-label="Ссылка на Instagram" class="footer-icon"
-                  >Instagram</a
+        <div class="footer-up">
+          <a href="" lang="en" class="logo"><span>Web</span>Studio</a>
+          <h2 class="footer-call">присоединяйтесь</h2>
+        </div>
+        <div class="footer-middle">
+          <address class="address">
+            г. Киев, пр-т Леси Украинки, 26
+            <ul>
+              <li>
+                <a href="mailto:info@example.com" class="footer-link"
+                  >info@example.com</a
                 >
               </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Twitter" class="footer-icon"
-                  >Twitter</a
-                >
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на Facebook" class="footer-icon"
-                  >Facebook</a
-                >
-              </li>
-              <li class="item">
-                <a href="" aria-label="Ссылка на LinkedIn" class="footer-icon"
-                  >LinkedIn</a
+              <li>
+                <a href="tell:+380991111111" class="footer-link"
+                  >+38 099 111 11 11</a
                 >
               </li>
             </ul>
-          </div>
+          </address>
+
+          <ul class="social-links">
+            <li class="item">
+              <a href="" aria-label="Ссылка на Instagram" class="footer-icon"
+                >Instagram</a
+              >
+            </li>
+            <li class="item">
+              <a href="" aria-label="Ссылка на Twitter" class="footer-icon"
+                >Twitter</a
+              >
+            </li>
+            <li class="item">
+              <a href="" aria-label="Ссылка на Facebook" class="footer-icon"
+                >Facebook</a
+              >
+            </li>
+            <li class="item">
+              <a href="" aria-label="Ссылка на LinkedIn" class="footer-icon"
+                >LinkedIn</a
+              >
+            </li>
+          </ul>
         </div>
+
         <p class="footer-developer">2020 | Developed by GoIT Students</p>
       </div>
     </footer>
